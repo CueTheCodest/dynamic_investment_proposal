@@ -1,0 +1,199 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Matrix font import */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/* Matrix effect for Technologies heading */
+.matrix-heading {
+  font-family: 'Share Tech Mono', 'Fira Mono', 'Consolas', monospace;
+  color: #39FF14;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px #39FF14, 0 0 2px #39FF14;
+  margin-top: 2em;
+}
+
+/* Tools/Engineering effect for Strategies heading */
+/* ...existing code... */
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.tools-heading {
+  font-family: 'Permanent Marker', 'Russo One', 'Orbitron', 'Share Tech Mono', 'Consolas', monospace;
+  color: #fff;
+  background: none;
+  letter-spacing: 2px;
+  font-size: 1.5em; /* Match .matrix-heading size */
+  text-shadow:
+    0 2px 4px #222,
+    0 0 2px #fff,
+    0 0 8px #3a3a3a,
+    2px 2px 0 #222;
+  margin-top: 0;
+  display: inline-block;
+  padding: 0.1em 0.5em;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #222 80%, #333 100%);
+  box-shadow: 0 2px 12px #111 inset;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap');
+
+.catalyst-heading {
+  font-family: 'Merriweather Sans', 'Segoe UI', 'Arial', sans-serif;
+  color: #3232ef;
+  letter-spacing: 1px;
+  font-size: 2em;
+  margin-top: 0.3em;    /* Reduced from 1.5em or default */
+  margin-bottom: 0.2em;
+}
+
+/* Matrix animation for Technologies */
+.animated-matrix {
+  color: #39FF14;
+  text-shadow:
+    0 0 8px #39FF14,
+    0 0 2px #fff,
+    0 2px 4px #222,
+    2px 2px 0 #222;
+  animation: matrix-glow 1.5s infinite alternate;
+}
+
+@keyframes matrix-glow {
+  0% {
+    text-shadow:
+      0 0 8px #39FF14,
+      0 0 2px #fff,
+      0 2px 4px #222,
+      2px 2px 0 #222;
+    color: #39FF14;
+  }
+  100% {
+    text-shadow:
+      0 0 16px #39FF14,
+      0 0 8px #fff,
+      0 4px 8px #222,
+      2px 2px 0 #222;
+    color: #baffc9;
+  }
+}
+
+/* Heartbeat animation for Catalyst */
+.heartbeat {
+  animation: heartbeat 1.2s infinite;
+  color: #3232ef;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+    color: #3232ef;
+  }
+  10% {
+    transform: scale(1.08);
+    color: #1976d2;
+  }
+  20% {
+    transform: scale(1);
+    color: #3232ef;
+  }
+  30% {
+    transform: scale(1.12);
+    color: #1976d2;
+  }
+  40% {
+    transform: scale(1);
+    color: #3232ef;
+  }
+  100% {
+    transform: scale(1);
+    color: #3232ef;
+  }
+}
+
+/* Chalkboard style for strategies */
+.chalkboard-section {
+  background: #222;
+  color: #fff;
+  border-radius: 10px;
+  padding: 2em 1.5em;
+  margin: 1.5em auto;
+  max-width: 700px;
+  box-shadow: 0 0 24px #111;
+  font-family: 'Permanent Marker', 'Share Tech Mono', 'Consolas', monospace;
+  border: 3px solid #39FF14;
+}
+
+/* Chalkboard grid for strategies */
+.chalkboard-section-grid {
+  background: #222;
+  color: #fff;
+  border-radius: 10px;
+  padding: 2em 1.5em;
+  margin: 1.5em auto;
+  max-width: 700px;
+  min-height: 400px;
+  box-shadow: 0 0 24px #111;
+  font-family: 'Permanent Marker', 'Share Tech Mono', 'Consolas', monospace;
+  border: 3px solid #39FF14;
+  display: grid;
+  grid-template-areas:
+    "topleft topright"
+    "bottomleft bottomright";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.2em;
+}
+
+.chalk-animated {
+  text-shadow:
+    0 2px 4px #222,
+    0 0 2px #fff,
+    0 0 8px #3a3a3a,
+    2px 2px 0 #222,
+    0 0 6px #39FF14;
+  letter-spacing: 2px;
+  color: #39FF14;
+  font-family: 'Permanent Marker', 'Share Tech Mono', 'Consolas', monospace;
+}

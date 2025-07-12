@@ -104,7 +104,11 @@ function App() {
   }
 
   const fetchApi = async () => {
-    const response = await axios.get('/api');
+    const apiUrl = import.meta.env.VITE_BACKEND_URL 
+      ? `${import.meta.env.VITE_BACKEND_URL}/api`
+      : '/api';
+    
+    const response = await axios.get(apiUrl);
     setLevels(response.data.levels);
     const initialChecked = {};
     response.data.levels.forEach(level => {
